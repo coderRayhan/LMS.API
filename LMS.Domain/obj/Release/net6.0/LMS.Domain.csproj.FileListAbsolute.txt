@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\bin\Release\net6.0\LMS.Domain.deps.json
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\bin\Release\net6.0\LMS.Domain.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\bin\Release\net6.0\LMS.Domain.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.AssemblyInfo.cs
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\refint\LMS.Domain.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\LMS.Domain.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Domain\obj\Release\net6.0\ref\LMS.Domain.dll

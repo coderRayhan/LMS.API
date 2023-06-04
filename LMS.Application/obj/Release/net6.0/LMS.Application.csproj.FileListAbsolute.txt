@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\bin\Release\net6.0\LMS.Application.deps.json
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\bin\Release\net6.0\LMS.Application.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\bin\Release\net6.0\LMS.Application.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\bin\Release\net6.0\LMS.Domain.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\bin\Release\net6.0\LMS.Domain.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.AssemblyInfo.cs
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.csproj.CopyComplete
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\refint\LMS.Application.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\LMS.Application.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.Application\obj\Release\net6.0\ref\LMS.Application.dll
