@@ -1,7 +1,14 @@
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using UEMS.Web.Abstractions;
+using UEMS.Web.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+builder.Services.AddSingleton<IViewRenderService, ViewRenderService>();
 
 var app = builder.Build();
 
@@ -17,9 +24,14 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
-
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
 app.MapRazorPages();
 
 app.Run();

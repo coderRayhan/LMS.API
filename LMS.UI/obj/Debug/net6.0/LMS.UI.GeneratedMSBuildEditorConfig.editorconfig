@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/Lookup/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/Lookup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/Lookup/_Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cFxfQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/Components/FormModal/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcRm9ybU1vZGFsXGRlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/_ValidationScriptsPartial.cshtml]
