@@ -1,5 +1,9 @@
-﻿using LMS.Application.Interfaces.Repositories;
+﻿using AutoMapper;
+using LMS.API.Models;
+using LMS.Application.Features.Lookups.Queries;
+using LMS.Application.Interfaces.Repositories;
 using LMS.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,10 +15,14 @@ namespace LMS.API.Controllers
     {
         private ILookupRepository _lookupRepository;
         private IUnitOfWork _unitOfWork;
-        public LookupController(ILookupRepository repository, IUnitOfWork unitOfWork)
+        private IMapper _mapper;
+        private IMediator _mediator;
+        public LookupController(ILookupRepository repository, IUnitOfWork unitOfWork, IMapper mapper, IMediator mediator)
         {
             _unitOfWork = unitOfWork;
             _lookupRepository = repository;
+            _mapper = mapper;
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -97,6 +105,14 @@ namespace LMS.API.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
+        }
+
+        [HttpGet("GetAllLookup")]
+        public async Task<IActionResult> GetAllLookup()
+        {
+            var list = await _mediator.Send(new GetAllLookupsDropdownQuery());
+            var mappedList = _mapper.Map<List<DropdownViewModel>>(list);
+            return Ok(mappedList);
         }
     }
 }

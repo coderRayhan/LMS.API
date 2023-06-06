@@ -1,3 +1,5 @@
+using LMS.Application.Extensions;
+using LMS.Application.Features.Lookups.Queries;
 using LMS.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddContext(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddRepositories();
+builder.Services.AddApplicationPackages();
+builder.Services.AddMediatR(r => r.RegisterServicesFromAssemblies(typeof(Program).Assembly, typeof(GetAllLookupsDropdownQueryHandler).Assembly));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
