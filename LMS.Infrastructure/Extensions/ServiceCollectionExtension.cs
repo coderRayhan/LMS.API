@@ -17,6 +17,7 @@ namespace LMS.Infrastructure.Extensions
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<ILookupRepository, LookupRepository>();
+            services.AddTransient<ILookupDetailsRepository, LookupDetailsRepository>();
         }
     }
 }
