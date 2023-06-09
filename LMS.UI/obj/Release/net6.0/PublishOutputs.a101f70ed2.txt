@@ -5,9 +5,14 @@ C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\LMS.U
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\LMS.UI.deps.json
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\LMS.UI.runtimeconfig.json
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\LMS.UI.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\Azure.Identity.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\Humanizer.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\MediatR.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\MediatR.Contracts.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\MessagePack.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\MessagePack.Annotations.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll

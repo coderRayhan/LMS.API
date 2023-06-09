@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cFxfQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/Lookup/_LoadAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cFxfTG9hZEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/Components/FormModal/default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcRm9ybU1vZGFsXGRlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/Components/Lookups/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcTG9va3Vwc1xkZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/Components/Navbar/default.cshtml]

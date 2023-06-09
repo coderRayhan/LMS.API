@@ -4,8 +4,13 @@ C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\apps
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\LMS.API.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\LMS.API.runtimeconfig.json
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\LMS.API.pdb
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\Azure.Identity.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\MediatR.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\MediatR.Contracts.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.API\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll

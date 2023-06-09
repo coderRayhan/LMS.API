@@ -87,7 +87,7 @@ namespace LMS.API.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("DeleteAsync")]
         public async Task<ActionResult> DeleteAsync(int id, CancellationToken cancellationToken)
         {
             try
@@ -111,8 +111,7 @@ namespace LMS.API.Controllers
         public async Task<IActionResult> GetAllLookup()
         {
             var list = await _mediator.Send(new GetAllLookupsDropdownQuery());
-            var mappedList = _mapper.Map<List<DropdownViewModel>>(list);
-            return Ok(mappedList);
+            return Ok(list);
         }
     }
 }

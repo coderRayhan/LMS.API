@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\Publish\LMSAPI</_PublishTargetUrl>
-    <History>True|2023-06-04T16:55:12.6303310Z;</History>
+    <History>True|2023-06-08T18:44:26.5451941Z;True|2023-06-04T22:55:12.6303310+06:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

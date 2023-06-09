@@ -555,6 +555,7 @@ pre {
     margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -575,7 +576,7 @@ pre {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 100%;
     }
 }
 
@@ -585,6 +586,8 @@ pre {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #edeaed;
+    height: 100%;
 }
 
 .row {
@@ -5084,6 +5087,7 @@ input[type="button"].btn-block {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
     .card > hr {
@@ -11473,7 +11477,6 @@ h1, h2, h3, h4, h5,
     background: #fff;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -11605,3 +11608,4 @@ a[data-toggle="collapse"] {
 .footer p {
     color: rgba(255, 255, 255, 0.5);
 }
+

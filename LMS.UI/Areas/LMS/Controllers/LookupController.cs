@@ -19,6 +19,12 @@ namespace LMS.UI.Areas.LMS.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            Lookup lookup = new();
+            return View(lookup);
+        }
+
+        public async Task<IActionResult> LoadAll()
+        {
             List<Lookup> lookup = new();
             HttpResponseMessage responseMessage = await httpClient.GetAsync("lookup");
             if (responseMessage.IsSuccessStatusCode)
@@ -26,52 +32,68 @@ namespace LMS.UI.Areas.LMS.Controllers
                 var jsonString = await responseMessage.Content.ReadAsStringAsync();
                 lookup = JsonConvert.DeserializeObject<List<Lookup>>(jsonString);
             }
-            return View(lookup);
+            return PartialView("_LoadAll", lookup);
         }
 
-        public async Task<IActionResult> Create()
+        public async Task<IActionResult> CreateOrEdit(int id = 0)
         {
-            var lookup = new Lookup();
-            return new JsonResult(new {isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_Create", lookup)});
+            if(id == 0)
+            {
+                var lookup = new Lookup();
+                lookup.ParentId = 0;
+                return new JsonResult(new { isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_Create", lookup) });
+            }
+            else
+            {
+                Lookup? lookup = new();
+                HttpResponseMessage responseMessage = await httpClient.GetAsync($"lookup/GetById?id={id}");
+                if (responseMessage.IsSuccessStatusCode)
+                {
+                    var jsonString = await responseMessage.Content.ReadAsStringAsync();
+                    lookup = JsonConvert.DeserializeObject<Lookup>(jsonString);
+                }
+                return new JsonResult(new { isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_Create", lookup) });
+            }
         }
         
         [HttpPost] 
-        public async Task<IActionResult> Create(Lookup lookup)
+        public async Task<IActionResult> CreateOrEditPost(Lookup lookup, int id = 0)
         {
-            lookup.ParentId = 0;
-            lookup.CreatedBy = "Rayhan";
-            lookup.Created = DateTime.Now;
-            lookup.LastModified = DateTime.Now;
-            lookup.LastModifiedBy = "rayhan";
-            lookup.DevCode = 9;
-            var jsonObj = JsonConvert.SerializeObject(lookup);
-            var res = await httpClient.PostAsJsonAsync("lookup", lookup);
-            return View();
-        }
-
-        public async Task<IActionResult> Edit(int id)
-        {
-            Lookup? lookup = new();
-            HttpResponseMessage responseMessage = await httpClient.GetAsync($"lookup/GetById?id={id}");
-            if(responseMessage.IsSuccessStatusCode)
+            if(id == 0)
             {
-                var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                lookup = JsonConvert.DeserializeObject<Lookup>(jsonString);
+                lookup.Status = "Active";
+                lookup.CreatedBy = "Rayhan";
+                lookup.Created = DateTime.Now;
+                lookup.DevCode = 9;
+                var jsonObj = JsonConvert.SerializeObject(lookup);
+                var res = await httpClient.PostAsJsonAsync("lookup", lookup);
+                return RedirectToAction("Index");
             }
-            return View(lookup);
+            else
+            {
+                lookup.LastModified = DateTime.Now;
+                lookup.LastModifiedBy = "rayhan";
+                lookup.DevCode = 9;
+                var res = await httpClient.PutAsJsonAsync($"lookup?id={id}", lookup);
+                return RedirectToAction("Index");
+            }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id, Lookup lookup)
+        public async Task<IActionResult> Delete(int id)
         {
-            lookup.ParentId = 0;
-            lookup.CreatedBy = "Rayhan";
-            lookup.Created = DateTime.Now;
-            lookup.LastModified = DateTime.Now;
-            lookup.LastModifiedBy = "rayhan";
-            lookup.DevCode = 9;
-            var res = await httpClient.PutAsJsonAsync($"lookup?id={id}", lookup);
-            return View();
+            var res = await httpClient.DeleteAsync($"lookup/DeleteAsync?id={id}");
+            if(res.IsSuccessStatusCode)
+            {
+                List<Lookup> lookup = new();
+                HttpResponseMessage responseMessage = await httpClient.GetAsync("lookup");
+                if (responseMessage.IsSuccessStatusCode)
+                {
+                    var jsonString = await responseMessage.Content.ReadAsStringAsync();
+                    lookup = JsonConvert.DeserializeObject<List<Lookup>>(jsonString);
+                }
+                return new JsonResult(new { isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_LoadAll", lookup) });
+            }
+            return new JsonResult(new { isValid = true });
         }
     }
 }

@@ -1,0 +1,31 @@
+﻿@{
+    var Id = ViewBag.Id;
+    var Name = ViewBag.Name;
+    var LookupId = ViewBag.LookupId;
+    var LabelClass = ViewBag.LabelClass;
+    var Method = ViewBag.Method;
+    var Label = ViewBag.Label;
+    var Lookups = ViewBag.Lookups;
+}
+<div class="from-group">
+    @if(Label != null)
+    {
+        <label class="form-label @LabelClass">
+            @Label
+        </label>
+        <select class="form-control" id="@Id" name="@Name" onchange="@Method">
+            <option value="">Choose Option</option>
+            @foreach (var item in Lookups)
+            {
+                if(item.Id == LookupId)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    }
+</div>

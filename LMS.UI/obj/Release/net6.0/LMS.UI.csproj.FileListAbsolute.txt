@@ -286,3 +286,8 @@ C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\refint\LMS.UI.dl
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\LMS.UI.pdb
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\LMS.UI.genruntimeconfig.cache
 C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\obj\Release\net6.0\ref\LMS.UI.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\bin\Release\net6.0\AutoMapper.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\bin\Release\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\bin\Release\net6.0\MediatR.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\bin\Release\net6.0\MediatR.Contracts.dll
+C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI\bin\Release\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
