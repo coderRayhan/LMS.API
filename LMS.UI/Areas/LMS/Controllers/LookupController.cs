@@ -1,4 +1,5 @@
 ﻿using LMS.Domain.Entities;
+using LMS.UI.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using UEMS.Web.Abstractions;
@@ -10,16 +11,19 @@ namespace LMS.UI.Areas.LMS.Controllers
     {
         private IViewRenderService _viewRenderService;
         private IConfiguration _config;
+        private IToastNotification _toast;
         HttpClient httpClient = new HttpClient();
-        public LookupController(IConfiguration config, IViewRenderService viewRenderService)
+        public LookupController(IConfiguration config, IViewRenderService viewRenderService, IToastNotification toast)
         {
             _viewRenderService = viewRenderService;
             _config = config;
+            _toast = toast;
             httpClient.BaseAddress = new Uri(_config.GetValue<string>("APIURL"));
         }
         public async Task<IActionResult> Index()
         {
             Lookup lookup = new();
+            lookup.ParentId = 0;
             return View(lookup);
         }
 
@@ -67,6 +71,10 @@ namespace LMS.UI.Areas.LMS.Controllers
                 lookup.DevCode = 9;
                 var jsonObj = JsonConvert.SerializeObject(lookup);
                 var res = await httpClient.PostAsJsonAsync("lookup", lookup);
+                if (res.IsSuccessStatusCode)
+                {
+                    await _toast.ToastSuccess("Saved Successfully");
+                }
                 return RedirectToAction("Index");
             }
             else

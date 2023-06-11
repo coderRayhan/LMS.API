@@ -1,3 +1,5 @@
+using LMS.UI.Abstractions;
+using LMS.UI.Services;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using UEMS.Web.Abstractions;
 using UEMS.Web.Services;
@@ -9,6 +11,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddSingleton<IViewRenderService, ViewRenderService>();
+builder.Services.AddSingleton<IToastNotification, ToastNotification>();
 
 var app = builder.Build();
 
