@@ -1,0 +1,24 @@
+﻿<div class="row">
+    <div class="col-md-6 mt-4">
+        <h3>Lookup Detail</h3>
+        <small>LMS > Setup > LookupDetail</small>
+    </div>
+    <div class="col-md-6">
+        <div class="text-right mt-4">
+            <a onclick="jQueryModalGet('/LMS/LookupDetail/CreateOrEdit', 'Lookup Detail')" class="btn btn-primary">Create</a>
+        </div>
+    </div>
+</div>
+<div id="viewAll" class="ml-4"></div>
+
+@section Scripts{
+    <script>
+        $(document).ready(() => {
+            loadData();
+        });
+
+        loadData = () => {
+            $('#viewAll').load('/LMS/LookupDetail/LoadAll');
+        }
+    </script>
+}

@@ -39,7 +39,7 @@ namespace LMS.API.Controllers
             await _mediator.Send(lookupDetail);
             return Created($"/LookupDetail/GetById?id={lookupDetail.Id}", lookupDetail);
         }
-        [HttpPut]
+        [HttpPost("Update")]
         public async Task<ActionResult> Update(UpdateLookupDetailsCommand lookupDetail)
         {
             await _mediator.Send(lookupDetail);

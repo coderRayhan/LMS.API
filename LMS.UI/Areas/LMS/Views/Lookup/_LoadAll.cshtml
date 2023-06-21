@@ -1,21 +1,12 @@
 ﻿@using LMS.Domain.Entities;
 @model List<Lookup>
 <style>
-    .customActiveBtn {
-        pointer-events: none;
-        background-color: #99F39A;
-        font-weight: 600
-    }
-    .customInactiveBtn {
-        pointer-events: none;
-        background-color: #F3ABA0;
-        font-weight: 600
-    }
+    
 </style>
 <div class="card mt-5">
     <div class="card-body">
         <table class="table table-bordered table-striped mt-2 text-center" id="lookupTable" style="width:100%">
-            <thead class="thead-primary" style="background-color:#1d1919; color:white">
+            <thead class="thead-dark">
                 <tr>
                     <th>Code</th>
                     <th>Name</th>
@@ -70,6 +61,6 @@
 
 <script>
     $(document).ready(() => {
-        let dt = new DataTable('#lookupTable');
+        $('#lookupTable').DataTable();
     })
 </script>

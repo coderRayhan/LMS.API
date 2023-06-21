@@ -1,5 +1,6 @@
 ﻿using LMS.Domain.Entities;
 using LMS.UI.Abstractions;
+using LMS.UI.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using UEMS.Web.Abstractions;
@@ -7,21 +8,18 @@ using UEMS.Web.Abstractions;
 namespace LMS.UI.Areas.LMS.Controllers
 {
     [Area("LMS")]
-    public class LookupController : Controller
+    public class LookupController : BaseController<LookupController>
     {
-        private IViewRenderService _viewRenderService;
-        private IConfiguration _config;
-        private IToastNotification _toast;
         HttpClient httpClient = new HttpClient();
-        public LookupController(IConfiguration config, IViewRenderService viewRenderService, IToastNotification toast)
+        private readonly IConfiguration _config;
+        public LookupController(IConfiguration config)
         {
-            _viewRenderService = viewRenderService;
             _config = config;
-            _toast = toast;
             httpClient.BaseAddress = new Uri(_config.GetValue<string>("APIURL"));
         }
         public async Task<IActionResult> Index()
         {
+            await Task.Delay(0);
             Lookup lookup = new();
             lookup.ParentId = 0;
             return View(lookup);
@@ -45,7 +43,7 @@ namespace LMS.UI.Areas.LMS.Controllers
             {
                 var lookup = new Lookup();
                 lookup.ParentId = 0;
-                return new JsonResult(new { isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_Create", lookup) });
+                return new JsonResult(new { isValid = true, html = await _viewRenderer.RenderViewToStringAsync("_Create", lookup) });
             }
             else
             {
@@ -55,8 +53,9 @@ namespace LMS.UI.Areas.LMS.Controllers
                 {
                     var jsonString = await responseMessage.Content.ReadAsStringAsync();
                     lookup = JsonConvert.DeserializeObject<Lookup>(jsonString);
+                    lookup.ParentId = lookup.ParentId == null ? 0 : lookup.ParentId;
                 }
-                return new JsonResult(new { isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_Create", lookup) });
+                return new JsonResult(new { isValid = true, html = await _viewRenderer.RenderViewToStringAsync("_Create", lookup) });
             }
         }
         
@@ -92,6 +91,7 @@ namespace LMS.UI.Areas.LMS.Controllers
             var res = await httpClient.DeleteAsync($"lookup/DeleteAsync?id={id}");
             if(res.IsSuccessStatusCode)
             {
+                await _toast.ToastSuccess("Deleted");
                 List<Lookup> lookup = new();
                 HttpResponseMessage responseMessage = await httpClient.GetAsync("lookup");
                 if (responseMessage.IsSuccessStatusCode)
@@ -99,7 +99,7 @@ namespace LMS.UI.Areas.LMS.Controllers
                     var jsonString = await responseMessage.Content.ReadAsStringAsync();
                     lookup = JsonConvert.DeserializeObject<List<Lookup>>(jsonString);
                 }
-                return new JsonResult(new { isValid = true, html = await _viewRenderService.RenderViewToStringAsync("_LoadAll", lookup) });
+                return new JsonResult(new { isValid = true, html = await _viewRenderer.RenderViewToStringAsync("_LoadAll", lookup) });
             }
             return new JsonResult(new { isValid = true });
         }

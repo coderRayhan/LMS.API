@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\LMS\LMS.UI\LMS.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/LookupDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cERldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/LookupDetail/_CreateOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cERldGFpbFxfQ3JlYXRlT3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/LookupDetail/_LoadAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cERldGFpbFxfTG9hZEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Areas/LMS/Views/Lookup/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE1TXFZpZXdzXExvb2t1cFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,8 +80,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcU2lkZWJhclxkZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/_CDNScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DRE5TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/_CDNStyles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DRE5TdHlsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/_Styles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TdHlsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/repos/LMS/LMS.UI/LMS.UI/Pages/Shared/_ValidationScriptsPartial.cshtml]

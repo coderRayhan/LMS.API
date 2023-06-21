@@ -1,0 +1,63 @@
+﻿@using LMS.Domain.Entities;
+@model LookupDetail
+
+@*<div class="card">
+    <div class="card-body">*@
+<div class="m-2">
+    <form asp-area="LMS" asp-controller="LookupDetail" asp-action="CreateOrEditPost" asp-route-id="@Model.Id" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="hidden" asp-for="Id" />
+                    <label class="form-label">Code</label>
+                    <input class="form-control" asp-for="Code" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Master</label>
+                    <input class="form-control" asp-for="LookupId" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input class="form-control" asp-for="Name" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Name Bangla</label>
+                    <input class="form-control" asp-for="NameBN" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Parent</label>
+                    <input class="form-control" asp-for="ParentId" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Description</label>
+                    <input class="form-control" asp-for="Description" />
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="width:100%">Close</button>
+            </div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary" style="width:100%">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+@*    </div>
+</div>*@
+
